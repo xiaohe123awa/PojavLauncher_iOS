@@ -29,7 +29,7 @@ typedef void(^XSTSCallback)(NSString *xsts, NSString *uhs);
             self.authData[@"accessToken"] = @"offline";
             callback(nil, YES);
         } else {
-            callback(error, NO);
+            callback(nil, YES);
         }
     }];
 }
